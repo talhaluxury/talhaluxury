@@ -61,5 +61,5 @@ app.post("/stripe-checkout", async (req, res) => {
 
 app.listen(3000, () => {
 
-    console.log("listening on port 3000;");
+    console.log("listening on port process.env.PORT || 3000;");
 });
